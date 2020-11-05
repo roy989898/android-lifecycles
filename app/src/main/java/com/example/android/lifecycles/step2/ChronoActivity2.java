@@ -18,8 +18,10 @@ package com.example.android.lifecycles.step2;
 
 import android.os.Bundle;
 import android.os.SystemClock;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
+
 import android.widget.Chronometer;
 
 import com.example.android.codelabs.lifecycle.R;
@@ -29,6 +31,8 @@ public class ChronoActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        System.out.println("onCreate");
         setContentView(R.layout.activity_main);
 
         // The ViewModelStore provides a new ViewModel or one previously created.
